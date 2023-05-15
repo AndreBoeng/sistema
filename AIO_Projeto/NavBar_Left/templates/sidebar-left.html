@@ -1,0 +1,66 @@
+<div class="d-flex flex-column sidebar-left border-rounded">
+  <a href="/"class="d-flex align-items-center mx-auto mb-3 mb-md-0 me-md-auto link-dark">
+    <img src="" class="img-thumbnail thumbnail-empresa-perfil" alt="">
+  </a>
+  <div class='mx-auto pt-3 text-center'>
+    <span class="fs-7">AIO - Arae</span>
+  </div>
+
+  <div class="d-flex w-100 fs-7 midia-social-icon-navbar-left mt-4 mb-2 ms-2 ">
+    <div class="d-flex w-100 ms-auto justify-content-center">
+      <i class="icons-midia-nav-right fa-brands fa-facebook-f"></i>
+      <i class="icons-midia-nav-right fa-brands fa-instagram"></i>
+      <i class="icons-midia-nav-right fa-brands fa-youtube"></i>      
+      <i class="icons-midia-nav-right fa-brands fa-twitter"></i>
+    </div>
+  </div>
+
+   
+  <div class="d-flex align-items-center justify-content-center mt-3">
+    <div class="divider"></div>
+  </div>
+
+  {% comment %} Lista da Barra  {% endcomment %}
+  <ul class="nav flex-column mb-auto mt-5">
+    <div class="menu-items ">
+      <li class=" d-flex align-items-center border-rounded-menu" >
+        <a href="{% url 'plataforma' %}" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-house-chimney pe-4"></i>Home</a>
+      </li>
+    </div>
+    <div class="menu-items ">
+      <li class=" d-flex align-items-center border-rounded-menu" >
+        <a href="{% url 'cadastro' %}" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-id-card pe-4"></i>Cadastro</a>
+      </li>
+    </div>
+    <div class="menu-items ">
+      <li class=" d-flex align-items-center border-rounded-menu" >
+        <a href="#" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-calendar-check pe-4"></i>Agendamento</a>
+      </li>
+    </div>
+    <div class="menu-items ">
+      <li class=" d-flex align-items-center border-rounded-menu" >
+        <a href="#" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-user pe-4"></i>Painel do Paciente</a>
+      </li>
+    </div>
+    <div class="menu-items ">
+      <li class=" d-flex align-items-center border-rounded-menu" >
+        <a href="#" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-cash-register pe-4"></i>Financeiro</a>
+      </li>
+    </div>
+    <div class="menu-items ">
+      <li class=" d-flex align-items-center border-rounded-menu" >
+        <a href="#" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-clipboard-list pe-4"></i>Estoque</a>
+      </li>
+    </div>
+
+
+  <div class="d-flex">
+    
+    <div class="d-flex w-100 fs-7 midia-social-icon-navbar-left ms-3 me-3 justify-content-end">
+       <div class="d-flex">
+        <i class="fa-solid fa-right-from-bracket pe-3 "></i>
+      </div>
+    </div> 
+  </div>
+  {% comment %} midias sociais {% endcomment %}
+</div>

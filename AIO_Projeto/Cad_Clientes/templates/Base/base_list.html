@@ -1,0 +1,18 @@
+{% load static %}
+{% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\Plataforma\templates\head.html' %}
+
+  <body>
+    <main class="container-fluid base-bg-color height-vh width-vw">
+      <div class="d-flex">
+        <div class="">{% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\NavBar_Left\templates\sidebar-left.html' %}
+        </div>
+        <div class="main-central">{% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\Cad_Clientes\templates\Central\listagem_clientes.html'%}</div>
+        <div class="ms-auto">
+          {% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\NavBar_Right\templates\sidebar-right.html'%}</div>
+      </div>
+    </main>
+
+    {% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\Plataforma\templates\js.html' %}
+  </body>
+
+</html>
