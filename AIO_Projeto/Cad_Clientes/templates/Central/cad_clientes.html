@@ -1,6 +1,13 @@
 <main class="cadastro-form">
 
     <div class="row">
+
+        {% comment %} <form action="." method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-outline-primary ms-4">Enviar</button>
+        </form> {% endcomment %}
+
         <div class="col-xxl-3"> 
             <div class="row">
                 <div class="d-flex flex-column">
@@ -138,12 +145,14 @@
 
         
         <div class="container-fluid col-xxl-9 mt-5"> 
-            <form action="cad_salvo" method="post">
+            {% comment %} Se eu colocar o ponto no action, a pagina será reenviada para ela mesma,
+            conforme a view que eu criei, onde está especificado o bloco IF. {% endcomment %}
+            <form action="." method="post">
                 {% csrf_token %}
                 <div class="row">
                     <div class="form-floating mb-3">
                         <input name="nome" type="text" class="form-control" id="floatingInput" placeholder="Nome Completo">
-                        <label for="floatingInput" class="ms-3"> Nome Completo</label>
+                        <label for="floatingInput" class="ms-3">Nome Completo</label>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">

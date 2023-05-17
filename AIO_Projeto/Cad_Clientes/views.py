@@ -1,15 +1,27 @@
 from django.shortcuts import render, redirect
 from .models import Cad_Clientes
-
+from .forms import form_cadastro_cliente
 
 
 
 # Create your views here.
 def Cadastro_Clientes(request):
-    return render(request, 'base/base_cad.html')
+    if request.method == "GET":
+        form = form_cadastro_cliente()
+        return render(request, "base/base_cad.html", {'form': form})
+    else:
+        form = form_cadastro_cliente(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request,"central/cad_salvo.html")
+        else:
+            return render(request, "base/base_cad.html", {'form': form})
+    
+
+    #return render(request, 'base/base_cad.html')
 
 
-def listagem_clientes_request(request):
+
 
 """
 #def listagem_clientes_request(request):
@@ -33,8 +45,8 @@ def listagem_clientes_request(request):
 
    
     return render(request, 'central/cad_salvo.html')
-    
-"""
+    """
+
 def Listagem_Clientes(request):
     listagem = {
         'clientes' : Cad_Clientes.objects.all()
