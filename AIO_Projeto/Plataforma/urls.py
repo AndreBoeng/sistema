@@ -17,13 +17,12 @@ Including another URLconf
 
 from django.urls import path
 from .views import Plataforma
-from Cad_Clientes.views import Cadastro_Clientes, Listagem_Clientes,listagem_clientes_request
+from Cad_Clientes.views import Cadastro_Clientes, Listagem_Clientes
 
 
 urlpatterns = [
     path('', Plataforma, name="plataforma" ),
     path('cadastro/', Cadastro_Clientes, name="cadastro"),
-    path('cadastro/cad_salvo', listagem_clientes_request, name="cad_salvo"),
     path('listagem_clientes/', Listagem_Clientes, name="listagem_clientes"),
-    
+       
 ]

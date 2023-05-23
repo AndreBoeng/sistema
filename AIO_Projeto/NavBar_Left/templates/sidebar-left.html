@@ -27,14 +27,41 @@
         <a href="{% url 'plataforma' %}" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-house-chimney pe-4"></i>Home</a>
       </li>
     </div>
-    <div class="menu-items ">
+    {% comment %} <div class="menu-items ">
       <li class=" d-flex align-items-center border-rounded-menu" >
-        <a href="{% url 'cadastro' %}" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-id-card pe-4"></i>Cadastro</a>
-      </li>
+        <a href="{% url 'cadastro' %}" class="nav-link fs-7 c1 ms-1" aria-current="page" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-id-card pe-4"></i>Cadastro</a>
+      </li> 
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Lista de Pacientes
+        </div> 
+      </div> <!--collapse-->
+    </div> <!--Menu-items--> {% endcomment %}
+    <div class="accordion" id="accordionExample">
+      <div class="nav-link fs-7 c1">
+        <h2 class="">
+          <a class="nav-link fs-7 c1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <i class="fa-solid fa-id-card pe-4"></i>Cadastro
+          </a>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="{% url 'cadastro' %}"<span>Cadastrar Paciente</span></a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="{% url 'listagem_clientes' %}" <span>Lista de Pacientes</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="menu-items ">
       <li class=" d-flex align-items-center border-rounded-menu" >
-        <a href="#" class="nav-link fs-7 c1 ms-1" aria-current="page"><i class="fa-solid fa-calendar-check pe-4"></i>Agendamento</a>
+        <a href="#" class="nav-link fs-7 c1 ms-1" aria-current="page">
+          <i class="fa-solid fa-calendar-check pe-4"></i>
+          Agendamento
+        </a>
       </li>
     </div>
     <div class="menu-items ">

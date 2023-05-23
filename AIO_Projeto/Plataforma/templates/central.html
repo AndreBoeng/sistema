@@ -1,24 +1,24 @@
 
 <main class="main-central align-items-center">
-    <div class="row row-apresentacao  align-items-center">
+    <div class="container">
+        {% comment %} <div class="row row-apresentacao  align-items-center">
         <div class="apresentacao d-flex align-items-center">
             <div class="apresentacao-box d-flex align-items-center">
                 <h6>Bem Vinda, Izabelle Schmitt ! </h6>
             </div><!--apresentacao-box-->
         </div><!--apresentacao-->
-    </div><!--row-->
+        </div><!--row--> {% endcomment %}
 
-    <div class="row row-boxes d-flex align-items-center justify-content-between p-1">
-        <div class="col-central col-xxl-3">teste</div>
-        <div class="col-central col-xxl-4" >teste</div>
-        <div class="col-central col-xxl-4">teste</div>
-    </div><!--row-boxes-->
-    <div class="row row-boxes d-flex align-items-center justify-content-between p-1">
-        <div class="col-central col-xxl-5">teste</div>
-        <div class="col-central col-xxl-5" >teste</div>
-    </div><!--row-boxes-->
-    <div class="row row-boxes d-flex align-items-center justify-content-between p-1">
-        <div class="col-central-agenda col-xxl-12">teste</div>
-    </div><!--row-boxes-->
-    
+        <div class="row row-boxes d-flex align-items-start">
+            <div class="col-xxl-5">{% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\Dispositivos\templates\profissional.html' %}</div>
+            <div class="col-xxl-6">{% include 'D:\Programação\teste\AIO_Env\AIO_Projeto\Dispositivos\templates\agenda.html' %}</div>
+        </div><!--row-boxes-->
+        {% comment %} <div class="row row-boxes d-flex align-items-center justify-content-between p-1">
+            <div class="col-central col-xxl-5">teste</div>
+            <div class="col-central col-xxl-5" >teste</div>
+        </div><!--row-boxes-->
+        <div class="row row-boxes d-flex align-items-center justify-content-between p-1">
+            <div class="col-central-agenda col-xxl-12">teste</div>
+        </div><!--row-boxes--> {% endcomment %}
+    </div>
 </main>

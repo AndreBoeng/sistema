@@ -1,0 +1,91 @@
+<main class="d-flex flex-column sidebar-left2 f1 ">
+
+    <div class="container-fluid h-100 ">
+        <div class="d-flex align-items-start flex-column bd-highlight mb-3 h-100">
+        
+            <div class=" bd-highlight w-100 ">
+                <div class="d-flex flex-column mb-5">
+                        <ul class="nav d-flex align-items-center justify-content-center">
+                            <div class="flex-shrink-0 p-4 border-bottom">
+                                <a href="/" class="d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none">
+                                    <p class="fs-5">Izabelle Schmitt</p><br>
+                                </a>
+                                <a href="/" class="d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none ">
+                                    <p class="fs-7">Clínica de Estética</p><br>
+                                </a>
+                            </div>
+                        </ul>
+                </div>
+            </div><!--1º Bloco -->
+
+            
+            <div class="mb-auto bd-highlight w-100 ">
+                <ul class="nav flex-column ">
+                    <div class="flex-shrink-0 ps-5">
+                        <ul class="list-unstyled">
+                            <li class="mb-1 mt-2">
+                                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 ">
+                                    <a href="{% url 'plataforma' %}" class="c1 link-body-emphasis d-inline-flex text-decoration-none rounded fs-6">Home</a></li>
+                                </button>
+                            </li>
+
+                            <li class="mb-1 mt-2">
+                                <button class="c1 btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false">
+                                    Agenda
+                                </button>
+                            </li>
+
+                            <li class="mb-1 mt-2">
+                                <button class="c1 btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#paciente-collapse" aria-expanded="false">
+                                    Paciente
+                                </button>
+                                <div class="collapse ps-3" id="paciente-collapse">
+                                    <ul class="btn-toggle-nav ps-2 list-unstyled fw-normal pb-2 small">
+                                        <li><a href="cadastro" class="c1 link-body-emphasis d-inline-flex text-decoration-none rounded pb-1 pt-1 fs-7">Cadastrar Paciente</a></li>
+                                        <li><a href="listagem_clientes" class="c1 link-body-emphasis d-inline-flex text-decoration-none rounded pb-1 pt-1 fs-7">Lista de Pacientes</a></li>
+                                    </ul>
+                                </div>
+                            </li>                      
+
+                            <li class="mb-1 mt-2">
+                                <button class="c1 btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false">
+                                    Financeiro
+                                </button>
+                            </li>
+
+                            <li class="mb-1 mt-2">
+                                <button class="f1 c1 btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#estoque-collapse" aria-expanded="false">
+                                    Estoque
+                                </button>
+                                <div class="collapse ps-3" id="estoque-collapse">
+                                    <ul class="btn-toggle-nav ps-2 list-unstyled fw-normal pb-2 small">
+                                        <li><a href="" class="c1 link-body-emphasis d-inline-flex text-decoration-none rounded pb-1 pt-1 fs-7">Cadastrar Itens</a></li>
+                                        <li><a href="" class="c1 link-body-emphasis d-inline-flex text-decoration-none rounded pb-1 pt-1 fs-7">Estoque</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div> <!--2º Bloco -->
+
+            <div class="p-2 bd-highlight w-100">
+                <ul class="nav flex-column">
+                    <div class="flex-shrink-0 p-2">
+                        <li class="border-top my-2 "></li>
+                        <li class="mb-1 d-flex align-items-center justify-content-end">
+                            <button class="c1 btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Sair
+                            </button>
+                        </li>
+                    </div>
+                <ul class="list-unstyled">  
+            </div>  <!-- 3º Bloco -->
+
+        </div><!-- Alinhamento dos Blocos -->
+    </div>
+    
+    
+</main>
+
+

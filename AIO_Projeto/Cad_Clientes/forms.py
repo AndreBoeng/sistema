@@ -6,46 +6,61 @@ from .models import Cad_Clientes
 #O interessante é usar o menor possivel de banco de dados, criando menos bancos de dados e menos informações duplicadas.
 #Criar o maximo de forms possiveis para manipular quais dados serão inseridos e manipulados.
 
-sexo = [
-    ('M', 'Masculino'),
-    ('F', 'Feminino'),
-]
 
-estados = [
-    ('AC', 'Acre'),
-    ('AL', 'Alagoas'),
-    ('AP', 'Amapá'),
-    ('AM', 'Amazonas'),
-    ('BA', 'Bahia'),
-    ('CE', 'Ceará'),
-    ('DF', 'Distrito Federal'),
-    ('ES', 'Espírito Santo'),
-    ('GO', 'Goiás'),
-    ('MA', 'Maranhão'),
-    ('MT', 'Mato Grosso'),
-    ('MS', 'Mato Grosso do Sul'),
-    ('MG', 'Minas Gerais'),
-    ('PA', 'Pará'),
-    ('PB', 'Paraíba'),
-    ('PR', 'Paraná'),
-    ('PE', 'Pernambuco'),
-    ('PI', 'Piauí'),
-    ('RJ', 'Rio de Janeiro'),
-    ('RN', 'Rio Grande do Norte'),
-    ('RS', 'Rio Grande do Sul'),
-    ('RO', 'Rondônia'),
-    ('RR', 'Roraima'),
-    ('SC', 'Santa Catarina'),
-    ('SP', 'São Paulo'),
-    ('SE', 'Sergipe'),
-    ('TO', 'Tocantins'),
-]
-
-class form_cadastro_cliente(forms.ModelForm, forms.Form):
+class form_cadastro_cliente(forms.ModelForm):
   
     class Meta:
         model = Cad_Clientes
         fields = "__all__"
+
+class form_anamnese(forms.Form):
+    nome_paciente = forms.CharField(label="Nome do Paciente", max_length=50)
+    anamnese = forms.Textarea()
+    # data_nascimento = forms.DateField(label="Data de Nascimento", widget=forms.DateInput(attrs={'type': 'date'}))
+    # sexo = forms.ChoiceField(label="Sexo", choices=(('M', 'Masculino'), ('F', 'Feminino')))
+    
+
+
+
+
+
+
+# sexo = [
+#     ('M', 'Masculino'),
+#     ('F', 'Feminino'),
+# ]
+
+# estados = [
+#     ('AC', 'Acre'),
+#     ('AL', 'Alagoas'),
+#     ('AP', 'Amapá'),
+#     ('AM', 'Amazonas'),
+#     ('BA', 'Bahia'),
+#     ('CE', 'Ceará'),
+#     ('DF', 'Distrito Federal'),
+#     ('ES', 'Espírito Santo'),
+#     ('GO', 'Goiás'),
+#     ('MA', 'Maranhão'),
+#     ('MT', 'Mato Grosso'),
+#     ('MS', 'Mato Grosso do Sul'),
+#     ('MG', 'Minas Gerais'),
+#     ('PA', 'Pará'),
+#     ('PB', 'Paraíba'),
+#     ('PR', 'Paraná'),
+#     ('PE', 'Pernambuco'),
+#     ('PI', 'Piauí'),
+#     ('RJ', 'Rio de Janeiro'),
+#     ('RN', 'Rio Grande do Norte'),
+#     ('RS', 'Rio Grande do Sul'),
+#     ('RO', 'Rondônia'),
+#     ('RR', 'Roraima'),
+#     ('SC', 'Santa Catarina'),
+#     ('SP', 'São Paulo'),
+#     ('SE', 'Sergipe'),
+#     ('TO', 'Tocantins'),
+# ]
+
+
         
 
     #Se eu quiser utilizar desta forma, terei de utilizar o metodo POST.GET,

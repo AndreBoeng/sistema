@@ -17,3 +17,13 @@ class Cad_Clientes(models.Model):
     email = models.EmailField(max_length=50,blank=True)
     telefone = models.IntegerField(blank=False)
     telefone2 = models.IntegerField(blank=True)
+
+
+class Model_anamnese(models.Model):
+    id_anamnese = models.AutoField(primary_key=True)
+    id_paciente = models.ForeignKey(Cad_Clientes, on_delete=models.CASCADE)
+    anamnese = models.TextField(blank=True)
+
+# ficha anamnese
+# dados do corpora
+# dados do facial
