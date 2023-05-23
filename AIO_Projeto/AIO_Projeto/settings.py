@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'NavBar_Left',
     'NavBar_Right',
     'Plataforma',
-    'WebSite',
+    'Dispositivos',
 ]
 
 MIDDLEWARE = [
